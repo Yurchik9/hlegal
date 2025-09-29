@@ -35,6 +35,7 @@ const paths = {
 
 // Compile and minify SCSS
 async function styles() {
+  console.log("Compiling SCSS...");
   const autoprefixer = (await import('gulp-autoprefixer')).default;
 
   return gulp.src(paths.styles.src)

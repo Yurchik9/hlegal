@@ -1,259 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-      name="viewport"
-    />
-    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <meta name="description" content="Put your description here." />
 
-    <meta property="og:title" content="The Rock" />
-    <meta property="og:description" content="The Rock site text description" />
-    <meta
-      property="og:image"
-      content="https://www.opengraph.xyz/example/642ee1fd-453c-4a71-8acb-89267a51b3cb"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hlegal</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 
-    <title>Hlegal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
+<body>
+  <div class="mainGradient">
+    <header>
+      <div class="container">
+        <a class="siteLogo" href="#">
+          <svg width="130" height="60">
+            <use xlink:href="./sprite.svg#logo" />
+          </svg>
+        </a>
+        <a class="menuBurger" href="#">
+          <svg width="32" height="33">
+            <use xlink:href="./sprite.svg#burger" />
+          </svg>
+        </a>
+        <div class="headerContent">
+          <div class="topSection">
+            <div class="langSwitch">
+              <a class="langBtn" href="#">УК</a>
+              <a class="langBtn" href="#">РУ</a>
+              <a class="langBtn" href="#">EN</a>
+            </div>
+            <ul class="topNavList">
+              <li>
+                <svg width="6" height="7">
+                  <use xlink:href="./sprite.svg#dot" />
+                </svg>
+              </li>
 
-    <link href="./styles/style.css" rel="stylesheet" />
-  </head>
-  <body>
-	  <div class="gradient">
-      <header data-aos="fade-down" data-aos-delay="100" data-aos-duration="500">
-        <div class="container">
-          <a href="">
-            <svg width="130" height="60">
-              <use xlink:href="./sprite.svg#logo" />
+              <li id="siteAddress">
+                <a href="#">Kyiv, Mechnikova str., 14/1</a>
+              </li>
+              <svg width="6" height="7">
+                <use xlink:href="./sprite.svg#dot" />
+              </svg>
+              <li>
+                <a href="tel:0800211927"><b>0800 211 927</b></a>
+              </li>
+              <svg width="6" height="7">
+                <use xlink:href="./sprite.svg#dot" />
+              </svg>
+              <li>
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="./sprite.svg#facebook" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <nav id="mainMenu">
+            <a href="#">about us</a>
+            <a href="./pages/services.html">services</a>
+            <a href="#">team</a>
+            <a href="#">publications</a>
+            <a href="#">contacts</a>
+          </nav>
+          <nav class="sideNav">
+            <ul class="sideNavList">
+              <li class="sideNavItem">
+                <a class="sideNavLink" href="#">
+                  <svg width="32" height="32">
+                    <use xlink:href="./sprite.svg#icon-close" />
+                  </svg>
+                </a>
+              </li>
+              <li class="sideNavItem"><a class="sideNavLink" href="#">about us</a></li>
+              <li class="sideNavItem"><a class="sideNavLink" href="./pages/services.html">services</a></li>
+              <li class="sideNavItem"><a class="sideNavLink" href="#">team</a></li>
+              <li class="sideNavItem"><a class="sideNavLink" href="#">publications</a></li>
+              <li class="sideNavItem"><a class="sideNavLink" href="#">contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="section1">
+      <div class="container">
+        <div class="Column">
+          <svg class="mainLogo" width="697" height="799">
+            <use xlink:href="./sprite.svg#main-logo" />
+          </svg>
+          <h1 class="mainTitle">you legal solutions provider</h1>
+          <a href="#section2" class="scrollLink">
+            <svg width="42" height="42">
+              <use xlink:href="./sprite.svg#icon-scrollarrow" />
             </svg>
           </a>
+        </div>
+      </div>
+    </section>
 
-          <div class="header-content">
-            <div class="flex top-block">
-              <button class="small-btn">ua</button>
-              <button class="small-btn">en</button>
-              <button class="small-btn active">de</button>
-              <ul class="top-list">
-                <li>
-                  <a href="">Kyiv, Mechnikova str, 14/1</a>
-                </li>
-                <li>
-                  <a href="tel:0800 211 927"><b>0800 211 927</b></a>
-                </li>
-                <li>
-                  <a>
-                    <svg width="24" height="24">
-                      <use xlink:href="./sprite.svg#facebook" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <nav class="flex">
-              <a href="">about us</a>
-              <a href="">services</a>
-              <a href="">team</a>
-              <a href="">publications</a>
-              <a href="./pages/contact.html">contact</a>
-            </nav>
+    <section id="section2" class="section2">
+      <div class="container">
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabOne">Consistent</a></li>
+            <li><a href="#tabTwo">Customer oriented</a></li>
+            <li><a href="#tabThree">Innovative</a></li>
+            <li><a href="#tabFour">Business oriented</a></li>
+          </ul>
+          <div id="tabOne" class="nthTab">
+            <h2 class="title">We turn the idea of legal services</h2>
+            <p>
+              Consolidating many years of experience and practice, the company's
+              lawyers accompany complex projects and achieve a number of important
+              decisions for the industry. Many of them form the practice of applying
+              the law of the sea in Ukraine.
+            </p>
+          </div>
+          <div id="tabTwo" class="nthTab">
+            <h2 class="title">We turn the idea of legal services</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae expedita ipsum doloremque facere
+              amet sint voluptate, inventore autem porro, assumenda iure minus facilis saepe aliquam odio laudantium
+              veritatis. Praesentium, molestiae.</p>
+          </div>
+          <div id="tabThree" class="nthTab">
+            <h2 class="title">We turn the idea of legal services</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia corporis non blanditiis. Deleniti,
+              eligendi doloribus consequuntur vel facere nisi possimus vero explicabo doloremque nesciunt voluptatum
+              aspernatur debitis fuga, error animi?</p>
+          </div>
+          <div id="tabFour" class="nthTab">
+            <h2 class="title">We turn the idea of legal services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis obcaecati dolore, repellat,
+              nobis eius tempora consequatur eligendi voluptates maiores excepturi necessitatibus sint ut cupiditate
+              quia ullam, repellendus voluptatum rem.</p>
           </div>
         </div>
-      </header>
-      <section
-        class="section-1"
-        data-aos="fade-down"
-        data-aos-delay="200"
-        data-aos-duration="900"
-      >
-        <div class="container">
-          <div class="flex-column">
-            <svg class="main-logo">
-              <use xlink:href="./sprite.svg#main-logo" />
-            </svg>
-            <h1 class="title">you legal solutions provider</h1>
-            <a href="#section-2" class="link">
-              <svg width="42" height="42">
-                <use xlink:href="./sprite.svg#scroll-btn" />
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="container">
+        <div class="title">
+          <div class="link">
+            <a href="#">
+              Services
+              <svg width="13" height="13">
+                <use xlink:href="./sprite.svg#arrow-right" />
               </svg>
             </a>
           </div>
+          <h1 class="question">What can we do better than others?</h1>
         </div>
-      </section>
-      <section
-        id="section-2"
-        class="section-2"
-        data-aos="fade-down"
-        data-aos-delay="200"
-        data-aos-duration="900"
-      >
-        <div class="container">
-          <div id="tabs" class="flex">
-            <ul class="flex-column">
-              <li>
-                <a href="#tabs-1"><h2 class="h1">Consistent</h2> <svg width="12" height="12" style="color:red"><use href="./sprite.svg#arrow-right"/></svg></a>
-              </li>
-              <li><a href="#tabs-2">Customer oriented</a></li>
-              <li><a href="#tabs-3">Innovativea</a></li>
-              <li><a href="#tabs-4">Business oriented</a></li>
-            </ul>
-            <div id="tabs-1" class="tab-content">
-              <p>
-                tab 1 Proin elit arcu, rutrum commodo, vehicula tempus, commodo
-                a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet
-                mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa
-                et lorem. Mauris dapibus lacus auctor risus.
-              </p>
-              <button class="btn">Send</button>
-            </div>
-            <div id="tabs-2" class="tab-content">
-              <p>
-                tab 2 Proin elit arcu, rutrum commodo, vehicula tempus, commodo
-                a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet
-                mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa
-                et lorem. Mauris dapibus lacus auctor risus.
-              </p>
-            </div>
-            <div id="tabs-3" class="tab-content">
-              <p>
-                tab 3 Proin elit arcu, rutrum commodo, vehicula tempus, commodo
-                a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet
-                mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa
-                et lorem. Mauris dapibus lacus auctor risus.
-              </p>
-            </div>
-            <div id="tabs-4" class="tab-content">
-              <p>
-                tab 4 Proin elit arcu, rutrum commodo, vehicula tempus, commodo
-                a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet
-                mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa
-                et lorem. Mauris dapibus lacus auctor risus.
-              </p>
-            </div>
+        <div class="gridS3">
+          <div class="itemS3">
+            <svg width="92" height="92">
+              <use xlink:href="./sprite.svg#icon-service1" />
+            </svg>
+            <h3>IT and e-commerce</h3>
+            <p>
+              An endless stream of contracts, tax issues, labor relations, corporate
+              papers - legal work distracts you from doing business. But there is
+              not much work to do to hire an in-house lawyer.
+            </p>
+          </div>
+          <div class="itemS3">
+            <svg width="92" height="92">
+              <use xlink:href="./sprite.svg#icon-service2" />
+            </svg>
+            <h3>Comprehensive daily legal support</h3>
+            <p>
+              In addition, over time, the work will become the same type and
+              uninteresting for a full-time lawyer. And we know very well how
+              difficult it is to find a good candidate with experience in the field
+              of information technology in Ukraine.
+            </p>
+          </div>
+          <div class="itemS3">
+            <svg width="92" height="92">
+              <use xlink:href="./sprite.svg#icon-service3" />
+            </svg>
+            <h3>Structuring corporate relationships</h3>
+            <p>
+              Instead of just providing legal services, we will hire a lawyer or a
+              whole team that will fit into the daily life of your company.
+            </p>
+          </div>
+          <div class="itemS3">
+            <svg width="92" height="92">
+              <use xlink:href="./sprite.svg#icon-service4" />
+            </svg>
+            <h3>Building contractual relations</h3>
+            <p>
+              Once a week, or week after month, you have your own lawyer by your
+              side. Anyone in the company can catch it at the coffee maker and just
+              talk about current affairs instead of waiting for update status.
+            </p>
+          </div>
+          <div class="itemS3">
+            <svg width="92" height="92">
+              <use xlink:href="./sprite.svg#icon-service5" />
+            </svg>
+            <h3>Protection of business, intellectual property</h3>
+            <p>
+              And all the other time he will work on new diverse projects, so he
+              will definitely not stop in professional development. One way or
+              another, all Axon Partners will work for you instead of a corporate
+              lawyer.
+            </p>
+          </div>
+          <div class="itemS3">
+            <svg width="92" height="92">
+              <use xlink:href="./sprite.svg#icon-service6" />
+            </svg>
+            <h3>Judicial representation</h3>
+            <p>
+              Is it a small, medium-sized company or a market leader? Local business
+              or multinational company? Do you have your own legal department or
+              not?
+            </p>
           </div>
         </div>
-      </section>
-      <section class="section-3">
-        <div class="container">
-          <div class="slider">
-            <div class="slider-item">
-              <div class="slider-item__img">
-                <img
-                  src="./images/avatar.jpg"
-                  alt="Олександр Олександровський Керуючий партнер"
-                />
-              </div>
-              <div class="slider-item__content">
-                <h3>team</h3>
-                <h2 class="">
-                  Ми звикли брати на себе відповідальність та завжди гарантуємо
-                  чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
-                  безсилі.
-                </h2>
-                <h4>Олександр Олександровський</h4>
-                <p>Керуючий партнер</p>
-              </div>
-            </div>
-            <div class="slider-item">
-              <div class="slider-item__img">
-                <img
-                  src="./images/avatar.jpg"
-                  alt="Олександр Олександровський Керуючий партнер"
-                />
-              </div>
-              <div class="slider-item__content">
-                <h3>team</h3>
-                <h2 class="">
-                  Ми звикли брати на себе відповідальність та завжди гарантуємо
-                  чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
-                  безсилі.
-                </h2>
-                <h4>Олександр Олександровський</h4>
-                <p>Керуючий партнер</p>
-              </div>
-            </div>
-            <div class="slider-item">
-              <div class="slider-item__img">
-                <img
-                  src="./images/avatar.jpg"
-                  alt="Олександр Олександровський Керуючий партнер"
-                />
-              </div>
-              <div class="slider-item__content">
-                <h3>team</h3>
-                <h2 class="">
-                  Ми звикли брати на себе відповідальність та завжди гарантуємо
-                  чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
-                  безсилі.
-                </h2>
-                <h4>Олександр Олександровський</h4>
-                <p>Керуючий партнер</p>
-              </div>
-            </div>
+      </div>
+    </section>
+  </div>
+  <div class="teamSection">
+    <div class="container">
+      <div class="teamContent">
+        <div class="teamSlide">
+          <img src="./images/avatar.jpg" alt="avatar">
+          <div>
+            <a href="#">
+              <h5>команда</h5>
+              <svg width="13" height="13">
+                <use xlink:href="./sprite.svg#arrow-right" />
+              </svg>
+            </a>
+            <h1>
+              Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть
+              у ситуаціях,
+              коли більшість безсилі.
+            </h1>
+            <h4>Олександр Олександровський</h4>
+            <p>Керуючий партнер</p>
           </div>
         </div>
-      </section>
+        <div class="teamSlide">
+
+          <img src="" data-lazy="./images/avatar.jpg" alt="avatar">
+          <div>
+            <a href="#">
+              <h5>команда</h5>
+              <svg width="13" height="13">
+                <use xlink:href="./sprite.svg#arrow-right" />
+              </svg>
+            </a>
+            <h1>
+              Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть
+              у ситуаціях,
+              коли більшість безсилі.
+            </h1>
+            <h4>Олександр Олександровський</h4>
+            <p>Керуючий партнер</p>
+          </div>
+        </div>
+        <div class="teamSlide">
+
+          <img src="" data-lazy="./images/avatar.jpg" alt="avatar">
+          <div>
+            <a href="#">
+              <h5>команда</h5>
+              <svg width="13" height="13">
+                <use xlink:href="./sprite.svg#arrow-right" />
+              </svg>
+            </a>
+            <h1>
+              Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть
+              у ситуаціях,
+              коли більшість безсилі.
+            </h1>
+            <h4>Олександр Олександровський</h4>
+            <p>Керуючий партнер</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
 
+  <div class="companySection">
+    <div class="companyContainer">
+      <h5>They already trust us</h5>
+      <div class="companyContent">
+        <a href="#"><img src="./images/company1.png" alt="company"></a>
+        <a href="#"><img src="./images/company2.png" alt="company"></a>
+        <a href="#"><img src="./images/company3.png" alt="company"></a>
+        <a href="#"><img src="./images/company4.png" alt="company"></a>
+        <a href="#"><img src="./images/company5.png" alt="company"></a>
+        <a href="#"><img src="./images/company6.png" alt="company"></a>
+        <a href="#"><img src="./images/company7.png" alt="company"></a>
+        <a href="#"><img src="./images/company8.png" alt="company"></a>
+        <a href="#"><img src="./images/company9.png" alt="company"></a>
+        <a href="#"><img src="./images/company10.png" alt="company"></a>
+        <a href="#"><img src="./images/company11.png" alt="company"></a>
+        <a href="#"><img src="./images/company12.png" alt="company"></a>
+      </div>
+    </div>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"
-      integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM="
-      crossorigin="anonymous"
-    ></script>
+  <div class="publicationsSection">
+    <div class="container">
+      <div>
+        <a href="#">
+          <h5>Publications</h5>
+          <svg width="13" height="13">
+            <use xlink:href="./sprite.svg#arrow-right" />
+          </svg>
+        </a>
+        <h1>We have something to tell</h1>
+        <div class="publicationsContent">
+          <div>
+            <img src="./images/publ1.png" alt="publ1">
+            <h4>Equity associate</h4>
+            <span>April 22</span>
+            <p>
+              I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my
+              parents told me
+              that if I…
+            </p>
+          </div>
+          <div>
+            <img src="./images/publ2.png" alt="publ2">
+            <h4>
+              Penalty for the Good Corporation: what will happen to Google and others for violating the
+              GDPR
+            </h4>
+            <span>September 29</span>
+            <p>
+              And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua
+              January 21
+              National Commission for Data Protection.
+            </p>
+          </div>
+          <div>
+            <img src="./images/publ3.png" alt="publ3">
+            <h4>Millennial Testament</h4>
+            <span>August 19</span>
+            <p>
+              What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical
+              legacy of the
+              Ukrainian generation X looks like this: an apartment in…
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="leftSide">
+        <div class="address">
+          <h4>Kyiv, Mechnikova str, 14/1</h4>
+          <svg width="3px" height="3px">
+            <use xlink:href="./sprite.svg#dot" />
+          </svg>
+          <a href="#">On map</a>
+        </div>
+        <div class="contacts">
+          <svg id="facebook" width="24px" height="24px">
+            <use xlink:href="./sprite.svg#facebook" />
+          </svg>
+          <svg width="3px" height="3px">
+            <use xlink:href="./sprite.svg#dot" />
+          </svg>
+          <a href="tel:0800211927"><b>0800 211 927</b></a>
+          <svg width="3px" height="3px">
+            <use xlink:href="./sprite.svg#dot" />
+          </svg>
+          <a href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+        </div>
+      </div>
+      <div class="rightSide">
+        <span>© 2021 HLEGAL Law company, LLC</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"
+    integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM=" crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script type="text/javascript">
-      $(document).ready(function () {
-        // init aos animation
-        AOS.init();
-
-        // init tab
-        $("#tabs").tabs();
-
-        $(".btn").click(function () {
-          alert("The paragraph was clicked.");
-        });
-        //init slider
-        $(".slider").slick({
-          dots: true,
-          arrows: false,
-          slidesToScroll: 1,
-          slidesToShow: 1,
-          mobileFirst: true,
-        });
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // init slider
+      $(".teamContent").slick({
+        dots: true,
+        arrows: false,
+        lazyLoad: "ondemand",
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        mobileFirst: true,
       });
-    </script>
+    });
+  </script>
 
-    <!-- <script src="./js/index.js"></script> -->
-  </body>
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+
+  <script>
+    let menuBtn = document.querySelector('.menuBurger');
+    let menu = document.querySelector('.sideNav');
+    let menuItem = document.querySelectorAll('.sideNavLink');
+
+    menuBtn.addEventListener('click', function () {
+      menuBtn.classList.toggle('active');
+      menu.classList.toggle('active');
+    });
+
+    menuItem.forEach(function (item) {
+      item.addEventListener('click', function () {
+        menuBtn.classList.remove('active');
+        menu.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+
 </html>

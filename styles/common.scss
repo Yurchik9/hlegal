@@ -1,21 +1,24 @@
-$main-gradient: linear-gradient(
-                228.57deg,
-                #323264 11.93%,
-                #323264 57.17%,
-                #643e72 87.46%
-);
+$main-gradient: linear-gradient(228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%);
+$gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+
+
 $gradient-text: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-$gradient-text: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-$gradient-text-reversed: linear-gradient(
-                90.13deg,
-                #ef8080 0.84%,
-                #f0145a 99.96%
-);
+$gradient-text-reversed: linear-gradient(90.13deg,
+    #ef8080 0.84%,
+    #f0145a 99.96%);
 
 $accent: rgba(240, 20, 90, 1);
 $blue: rgba(36, 163, 255, 1);
 $blue-hover: rgba(0, 133, 255, 1);
 $blue-active: rgba(0, 108, 207, 1);
+$white: rgba(255, 255, 255, 1);
+$grey-text: rgba(179, 179, 186, 1);
+$grey-bg: rgba(245, 245, 250, 1);
+$main: rgba(50, 50, 100, 1);
+$main-alt: rgba(70, 70, 110, 1);
 
 * {
   margin: 0;
@@ -39,7 +42,7 @@ strong {
   font-weight: 700;
 }
 
-.h1 {
+h1 {
   font-size: 38px;
   line-height: 46px;
 }
@@ -55,14 +58,35 @@ h3 {
 }
 
 h4 {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 20px;
 }
-h5{
+
+h5 {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+}
+
+a {
+  font-weight: 400;
+  line-height: 20px;
+  color: $blue;
+
+  &:active,
+  &:hover {
+    color: $accent
+  }
+
+  cursor: pointer;
 }
 
 html {
@@ -73,9 +97,12 @@ body {
   font-size: 16px;
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
-  background: black;
-  color: white;
+  color: $white;
+
 }
+
+
+
 
 .container {
   max-width: 100%;
@@ -83,26 +110,12 @@ body {
   margin: 0 auto;
 }
 
-.small-btn {
-  padding: 5px 7px;
-  font-size: 12px;
-  line-height: 14px;
-  border-radius: 8px;
-  background: transparent;
-  letter-spacing: 1px;
-  font-weight: 700;
-  transition: background 0.3s;
-  text-transform: uppercase;
 
-  &.active,
-  &:hover {
-    background: $accent;
-  }
-}
 
 .btn {
   padding: 18px 30px;
   color: white;
+  gap: 10px;
   font-size: 16px;
   min-width: 180px;
   line-height: 20px;
@@ -110,7 +123,6 @@ body {
   background: $blue;
   border-radius: 12px;
   box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
-  transition: background 0.3s;
   cursor: pointer;
 
   &:hover {
@@ -122,22 +134,11 @@ body {
   }
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin flex-container(
-  $direction: "row",
+@mixin flex-container($direction: "row",
   $justifyContent: "flex-start",
   $alignItems: "center",
   $flexWrap: "wrap",
-  $gap: 10px
-) {
+  $gap: 10px) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justifyContent;
@@ -146,50 +147,149 @@ body {
   gap: $gap;
 }
 
-input, textarea {
-  background: rgba(255, 255, 255, 1);
-  display: block;
-  width: 100%;
-  padding: 15px;
-  border-radius: 8px;
-  font-size: 16px;
-  line-height: 20px;
-  color: black;
-  border: 1px solid transparent;
-  &:focus {
-    border: 1px solid $blue;
+
+//-----------------------------
+
+
+
+@media screen and (min-width: 320px) {
+  .container {
+    padding: 0 30px;
   }
-  //&:invalid {
-  //  border: 1px solid red;
-  //}
-  &:disabled {
-    background: rgba(179, 179, 186, 1);
+
+  .teamSection .container .teamContent .teamSlide {
+    flex-direction: column;
+    height: auto;
   }
-  &::placeholder {
-    color: rgba(179, 179, 186, 1);
+
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+
+    .leftSide {
+      .address {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contacts {
+        flex-direction: column;
+      }
+    }
   }
-}
-textarea {
-  resize: none;
-  height: 130px;
+
+  .companySection .companyContainer .companyContent {
+    grid-template-columns: 1fr;
+  }
+
+  .publicationsSection {
+    margin-top: 0 !important;
+
+    .container .publicationsContent {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .section3 .container .gridS3 {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: calc(650px + 30px + 30px);
-    padding: 0 30px;
+    padding: 0 60px;
+    max-width: calc(650px + 60px + 60px);
+  }
+
+  .menuBurger {
+    display: none;
+  }
+
+  .headerContent .sideNav {
+    display: none;
+  }
+
+  .section3 .container .gridS3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .companySection .companyContainer .companyContent {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .publicationsSection .container .publicationsContent {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer .container {
+    flex-direction: row;
+
+    .leftSide {
+      .address {
+        flex-direction: row;
+      }
+
+      .contacts {
+        flex-direction: row;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 1024px) {
   .container {
     max-width: calc(904px + 60px + 60px);
-    padding: 0 60px;
+  }
+
+  .section2 .container #tabs {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section3 .container .gridS3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .teamSection .container .teamContent .teamSlide {
+    height: 528px;
+    flex-direction: row;
+
+    img {
+      max-width: 44%;
+    }
+  }
+
+  .companySection .companyContainer .companyContent {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .publicationsSection {
+    margin-top: 60px !important;
+    .container .publicationsContent {
+      grid-template-columns: 1fr 1fr 1fr;
+
+    }
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
     max-width: calc(1320px + 60px + 60px);
+  }
+
+  .teamSection .container .teamContent .teamSlide {
+    height: 344px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: calc(1600px + 160px + 160px);
+    padding: 0 160px;
+  }
+
+  .companySection .companyContainer .companyContent {
+    border-radius: 12px;
+    overflow: hidden;
   }
 }
