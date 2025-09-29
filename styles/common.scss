@@ -217,10 +217,13 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .publicationsSection .container .publicationsContent {
+    .publicationsSection .container .publicationsContent {
     grid-template-columns: 1fr 1fr;
   }
 
+  .publicationsSection .container .publicationsContent > div:last-child {
+    grid-column: span 2;
+  }
   footer .container {
     flex-direction: row;
 
@@ -269,6 +272,9 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
 
     }
+  }
+  .publicationsSection .container .publicationsContent > div:last-child {
+    grid-column: span 1;
   }
 }
 
